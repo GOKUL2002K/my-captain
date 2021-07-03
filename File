@@ -1,0 +1,11 @@
+file1=open("/storage/emulated/0/Python/new.py","r")
+file2=open("/storage/emulated/0/Python/file.txt","w")
+l1=file1.read()
+print(l1)
+l2=l1[::-1]
+file2.write(l2)
+file1.close()
+file2.close()
+
+file2=open("/storage/emulated/0/Python/file.txt","r")
+print("\n reversed content:\n",file2.read())
